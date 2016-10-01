@@ -1,0 +1,16 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>Substream</title>
+  <rect fill="none" id="canvas_background" height="502" width="502" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Logo</title>
+  <rect y="75" x="80" stroke="#2980b9" rx="40" id="svg_3" height="80" width="350" stroke-width="1.5" fill="#2980b9"/>
+  <rect rx="40" stroke="#2980b9" id="svg_6" height="80" width="350" y="350" x="80" stroke-width="1.5" fill="#2980b9"/>
+  <rect rx="40" stroke="#1abc9c" id="svg_7" height="80" width="200" y="215" x="155" stroke-width="1.5" fill="#1abc9c"/>
+ </g>
+</svg>
