@@ -1,0 +1,27 @@
+{
+  "name": "Substream",
+  "version": "0.0.1",
+  "description": "An advanced Mp3 subtitles editor",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CYRIAQU3/Substream.git"
+  },
+  "keywords": [
+    "Substream",
+    "mp3",
+    "metadata",
+    "tag"
+  ],
+  "author": "Cyriaque DELAUNAY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CYRIAQU3/Substream/issues"
+  },
+  "homepage": "https://github.com/CYRIAQU3/Substream#readme",
+  "dependencies": {
+    "electron-gh-releases": "^2.0.3",
+    "lodash": "^4.13.1",
+    "package-script": "0.0.8"
+  }
+}
