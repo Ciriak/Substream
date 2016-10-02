@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="substream" ng-controller="mainCtrl">
 	<head>
 		<meta charset="utf-8">
 		<title>Substream</title>
 		<link rel="stylesheet" href="css/substream.css" charset="utf-8">
 	</head>
 	<body>
+
+		<div id="editor" ng-include="'views/editor.html'" ng-controller="editorCtrl"></div>
+
+		<!--								-->
+		<!-- JS dependencies -->
+		<!--								-->
 		<script src="vendors/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;" charset="utf-8"></script>
 		<script src="vendors/angular/angular.min.js" charset="utf-8"></script>
 		<script src="vendors/bootstrap-sass/assets/javascripts/bootstrap.min.js" charset="utf-8"></script>

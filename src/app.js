@@ -18,7 +18,7 @@ app.on('activate', () => {
 
 
 function createWindow () {
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({width: 1366, height: 768})
   win.loadURL(`file://${__dirname}/app/index.html`)
   win.webContents.openDevTools()
   win.on('closed', () => {

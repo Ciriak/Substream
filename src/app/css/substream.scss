@@ -1,3 +1,25 @@
 @import 'variables';
 @import '../vendors/mdi/scss/materialdesignicons';
 @import '../vendors/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+//
+// Substream overload
+//
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.editor-content{
+  height: 70vh;
+}
+
+.editor-feed {
+  height: calc(30vh - 30px);
+}
+
+.editor-footer {
+  height: 30px;
+  background-color: #000000;
+}

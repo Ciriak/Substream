@@ -101,7 +101,7 @@ gulp.task('electron-build', function(callback) {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/app/style/**/*.scss', ['sass']);
+  gulp.watch('./src/app/css/**/*.scss', ['sass']);
   gulp.watch('./src/app/**/*.html', ['html']);
   gulp.watch('./src/app/**/*.js', ['scripts']);
   gulp.watch('./src/*', ['copy-electron-components']);
