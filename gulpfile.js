@@ -4,7 +4,8 @@ var electronVersion = "1.0.1";
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
+var less = require('gulp-less');
+var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
 var jsonminify = require('gulp-jsonminify');
 var install = require("gulp-install");
@@ -21,10 +22,10 @@ var winInstaller = require('electron-winstaller');
 //retreive package.json data
 var pjson = require('./package.json');
 
-gulp.task('sass', function () {
-  return gulp.src('./src/app/css/**/*.scss')
-    .pipe(plumber())
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+gulp.task('less', function () {
+  return gulp.src('./src/app/css/substream.less')
+    .pipe(less())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./dist/app/css'));
 });
 
@@ -101,7 +102,7 @@ gulp.task('electron-build', function(callback) {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/app/css/**/*.scss', ['sass']);
+  gulp.watch('./src/app/css/**/*.less', ['less']);
   gulp.watch('./src/app/**/*.html', ['html']);
   gulp.watch('./src/app/**/*.js', ['scripts']);
   gulp.watch('./src/*', ['copy-electron-components']);
@@ -133,7 +134,7 @@ gulp.task('prepare-dev-env', gulpsync.sync([
     ['install-dependencies'],
     [
         // async
-        'sass',
+        'less',
         'scripts',
         'html',
         'copy-dependencies',
