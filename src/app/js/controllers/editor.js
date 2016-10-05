@@ -1,4 +1,4 @@
 app.controller('editorCtrl', ['$scope', '$http','$rootScope', function($scope, $http, $rootScope)
 {
-  $scope.test = 1;
+  $scope.project = null;
 }]);
